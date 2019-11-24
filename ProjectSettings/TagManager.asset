@@ -8,6 +8,9 @@ TagManager:
   - RightWall
   - Floor
   - Roof
+  - Vertical
+  - Horizontal
+  - Enemy
   layers:
   - Default
   - TransparentFX

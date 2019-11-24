@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 703da409350d5c448bef8ac928c46ca0, type: 3}
-  m_Name: New Vector 2D
+  m_Name: BallAxis
   m_EditorClassIdentifier: 
-  vec2: {x: 0, y: 0}
+  vec2: {x: -0.5005946, y: -0.5005946}

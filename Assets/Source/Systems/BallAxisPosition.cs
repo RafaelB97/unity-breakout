@@ -12,8 +12,8 @@ public class BallAxisPosition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dic.vec2.x = (float) 1;
-        dic.vec2.y = (float) 1;
+        dic.vec2.x = (float) 0.5;
+        dic.vec2.y = (float) 0.5;
     }
 
     // Update is called once per frame
