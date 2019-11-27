@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 703da409350d5c448bef8ac928c46ca0, type: 3}
-  m_Name: BallDirection
+  m_Script: {fileID: 11500000, guid: 7035a4fc8b08c6e4f879079f88ff4abe, type: 3}
+  m_Name: GameSystem
   m_EditorClassIdentifier: 
-  vec2: {x: 0, y: 0}
+  gameState: 0
+  maxEnemys: 0
+  hitEnemys: 0

@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d09b5162c9165b4481c1c9c51911b7f, type: 3}
-  m_Name: PlayerSpeed
+  m_Script: {fileID: 11500000, guid: d2584da1633ce7b41b89fefa425833d8, type: 3}
+  m_Name: BallProperties
   m_EditorClassIdentifier: 
-  value: 15
+  axis: {x: 0, y: 0}
+  dir: {x: 0, y: 0}
+  speed: 0
