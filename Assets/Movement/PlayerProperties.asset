@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PlayerProperties
   m_EditorClassIdentifier: 
   axis: 0
-  damp: 0
-  pos: 0
-  speed: 0
+  damp: 0.3
+  pos: 9.968568
+  speed: 20

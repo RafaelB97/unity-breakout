@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7035a4fc8b08c6e4f879079f88ff4abe, type: 3}
-  m_Name: GameSystem
+  m_Name: GameProperties
   m_EditorClassIdentifier: 
   gameState: 0
-  maxEnemys: 0
+  maxEnemys: 27
   hitEnemys: 0

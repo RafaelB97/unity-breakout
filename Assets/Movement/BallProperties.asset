@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2584da1633ce7b41b89fefa425833d8, type: 3}
   m_Name: BallProperties
   m_EditorClassIdentifier: 
-  axis: {x: 0, y: 0}
-  dir: {x: 0, y: 0}
-  speed: 0
+  axis: {x: 0, y: -0.14}
+  dic: {x: 1, y: 1}
+  speed: 7

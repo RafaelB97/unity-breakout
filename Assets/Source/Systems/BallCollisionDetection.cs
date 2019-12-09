@@ -1,6 +1,8 @@
 ﻿using System.Numerics;
 using Source.Components;
+using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Vector2 = System.Numerics.Vector2;
 using Vector3 = UnityEngine.Vector3;
@@ -49,6 +51,9 @@ namespace Source.Systems
                         game.hitEnemys = game.hitEnemys + 1;
                     }
                     // print("-----------------------------------------------------");
+                    break;
+                case "Floor":
+                    game.gameState = State.Lose;
                     break;
             }
         }

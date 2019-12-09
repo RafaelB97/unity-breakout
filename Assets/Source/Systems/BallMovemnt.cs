@@ -9,6 +9,7 @@ namespace Source.Systems
     {
         [SerializeField] private Transform ball = null;
         [SerializeField] private Ball ballPro = null;
+        [SerializeField] private Game game = null;
 
         private void Start()
         {
@@ -16,6 +17,7 @@ namespace Source.Systems
             ballPro.axis.x = (float) 0;
             ballPro.dic.x = (float) 1;
             ballPro.dic.y = (float) 1;
+            ball.gameObject.SetActive(false);
         }
         
         private void FixedUpdate()
@@ -23,11 +25,15 @@ namespace Source.Systems
             // ball.Translate(ballDic.vec2.x, ballDic.vec2.y, 0);
             // ball.Translate(0, ballDic.vec2.y, 0);
             // ball.Translate(ballDic.vec2.x, 0, 0);
-            print(ballPro.axis.x + " " + ballPro.axis.y);
-            print("-------------------");
-            ballPro.axis.x = ballPro.dic.x * ballPro.speed * Time.deltaTime;
-            ballPro.axis.y = ballPro.dic.y * ballPro.speed * Time.deltaTime;
-            ball.Translate(ballPro.axis.x, ballPro.axis.y, 0);
+            // print(ballPro.axis.x + " " + ballPro.axis.y);
+            // print("-------------------");
+
+            if (game.gameState == State.Current)
+            {
+                ballPro.axis.x = ballPro.dic.x * ballPro.speed * Time.deltaTime;
+                ballPro.axis.y = ballPro.dic.y * ballPro.speed * Time.deltaTime;
+                ball.Translate(ballPro.axis.x, ballPro.axis.y, 0);
+            }
         }
     }
 }

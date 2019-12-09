@@ -7,6 +7,7 @@ namespace Source.Systems
     {
         [SerializeField] private Transform pawnTransform = null;
         [SerializeField] private Player player = null;
+        [SerializeField] private Game game = null;
         [SerializeField] private BooleanValue left = null;
         [SerializeField] private BooleanValue right = null;
 
@@ -23,21 +24,25 @@ namespace Source.Systems
         private void Update()
         {
             // pawnTransform.Translate(axis, 0, 0);
-            if (left.value == false && player.axis < 0)
+
+            if (game.gameState == State.Current)
             {
-                // print(axis.value);
-                pawnTransform.Translate(player.axis, 0, 0);
-                var newPosition = pawnTransform.position;
-                player.pos = newPosition.x;
-                // right.value = false;
-            }
-            if (right.value == false && player.axis > 0)
-            {
-                // print(axis.value);
-                pawnTransform.Translate(player.axis, 0, 0);
-                var newPosition = pawnTransform.position;
-                player.pos = newPosition.x;
-                // left.value = false;
+                if (left.value == false && player.axis < 0)
+                {
+                    // print(axis.value);
+                    pawnTransform.Translate(player.axis, 0, 0);
+                    var newPosition = pawnTransform.position;
+                    player.pos = newPosition.x;
+                    // right.value = false;
+                }
+                if (right.value == false && player.axis > 0)
+                {
+                    // print(axis.value);
+                    pawnTransform.Translate(player.axis, 0, 0);
+                    var newPosition = pawnTransform.position;
+                    player.pos = newPosition.x;
+                    // left.value = false;
+                }
             }
         }
 
